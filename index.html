@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+    <title>Rob Hamilton's Portfolio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +22,12 @@
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
     <!-- github activity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
@@ -34,19 +38,20 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
+            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="Robert Hamilton" />
             <div class="profile-content float-left">
-                <h1 class="name">James Lee</h1>
-                <h2 class="desc">Web App Developer</h2>   
+                <h1 class="name">Robert Hamilton</h1>
+                <h2 class="desc">Data Scientist</h2>   
                 <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
-                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+                    <li class="list-inline-item"><a href="https://www.twitter.com/rob1ham"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/rob1ham/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/Rob1Ham"><i class="fab fa-github-alt"></i></a></li>    
+                    <!--<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
+                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>     -->           
                 </ul> 
             </div><!--//profile-->
             <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+            <a class="btn btn-cta-secondary btn-download float-right" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
         </div><!--//container-->
     </header><!--//header-->
     
@@ -194,14 +199,12 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        <p>My Github 
                         
                         <div id="github-graph" class="github-graph">
 
                         </div><!--//github-graph-->
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                         
@@ -214,9 +217,9 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Boston, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="Rob@robdoesdata.com">Rob@robdoesdata.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.robdoesdata.com">https://www.robdoesdata.com</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -410,7 +413,7 @@
     <!-- github calendar plugin -->
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>            
